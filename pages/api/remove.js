@@ -1,6 +1,6 @@
 import { db_connections } from "../../project.config"
 
-export default async (req, res) => {
+export default deleteTodo = async (req, res) => {
     if (!req.query.todo) {
         return res.status(400).send('Todo param is required!')
     }

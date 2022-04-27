@@ -1,6 +1,6 @@
 import { db_connections } from "../../project.config"
 
-export default async (req, res) => {
+export default listTodo = async (req, res) => {
     const token = db_connections.token;
     const url = `${db_connections.url}/lrange/todo/0/100?_token=${token}`;
 
