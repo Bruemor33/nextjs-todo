@@ -81,6 +81,7 @@ export default function Home() {
 
           {data.map((item) => 
             <a
+              key={item}
               href='#'
               onClick={() => removeTodo(item)}
               className={styles.card}
